@@ -5,7 +5,7 @@ For Astronomical Data processing code and general setup guide
 For the course you'll need two seperate environments, one to contain Pynot and one for the rest of the course. This page will give an example on how to setup with windows and linux/mac. For general python usage and ease of setup in case you are new: 
 
 - For windows I recommend using Anaconda navigator
-- For mac/linux, you'll need a command terminal, your computer generally comes with it for mac, and if you are running linux, I presume you know what you are doing and just here for the code.
+- For linux, you'll need a command terminal and conda installed, I presume you know what you are doing and just here for the code.
 
 ## Windows
 The steps to setting up your environment in anaconda navigator are pretty simple:
@@ -27,9 +27,8 @@ The steps to setting up your environment in anaconda navigator are pretty simple
     - For windows last known (for me) working version is 0.2.22 on windows 10
 Now for both environments you'll need an editor, i recommend Spyder, Jupyterlab or Jupyter Notebook, VS studio is another option, but i cannot provide a full guide to that as i don't use it, many of the same steps are applicable though.
 
-## Linux/MAC
+## Linux
 I work on a linux system currently, but previously had it on windows, here are the steps i used to getting my setup running.
-For getting started on mac follow the installation guide on: https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html, once you have conda installed, the rest of the steps are applied in the same manner:
 - Open your terminal
 - To create your environments write: conda create --name ADP python=3.6 and when that is done conda create --name pynot python=3.6
 - Then write: conda activate ADP
@@ -41,3 +40,5 @@ For getting started on mac follow the installation guide on: https://docs.conda.
   - Last known functional version as of writing this is 1.0.4 (current), to install the specific version: pip install pynot-redux==1.0.4
   - This will install dependancies and get your where you need to be, from this point on, be aware the pynot-redux is experimental and as such can change.
   - Once this is done, run conda install jupyter to get jupyter notebook. To launch Jupyter notebook with the environment activated simply write jupyter notebook
+# Note:
+I have managed to get all required packages working in a single environment on linux, i have uploaded this environment for download (pynot.yml), i am running python 3.6 on that environment which was what i ran while taking the course, keep in mind that updating python versions can be a challenge, for newest versions the step above can be followed, i recommend installing pynot first and then the rest of the packages as that method seems to work best in general. Look up how to install an environment from a .yml file if you need instructions on that.
