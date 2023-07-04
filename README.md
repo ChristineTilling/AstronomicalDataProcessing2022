@@ -30,7 +30,7 @@ Now for both environments you'll need an editor, i recommend Spyder, Jupyterlab 
 ## Linux
 I work on a linux system currently, but previously had it on windows, here are the steps i used to getting my setup running.
 - Open your terminal
-- To create your environments write: conda create --name ADP python=3.6 and when that is done conda create --name pynot python=3.6
+- To create your environments write: conda create --name ADP python=3.8 and when that is done conda create --name pynot python=3.8
 - Then write: conda activate ADP
   - pip install package_name will install all the packages you need.
   - In case you skipped the windows section, these are the packages: scipy, sympy, ccdproc, astroquery, uncertainties, lmfit, imexam
@@ -41,4 +41,8 @@ I work on a linux system currently, but previously had it on windows, here are t
   - This will install dependancies and get your where you need to be, from this point on, be aware the pynot-redux is experimental and as such can change.
   - Once this is done, run conda install jupyter to get jupyter notebook. To launch Jupyter notebook with the environment activated simply write jupyter notebook
 # Note:
-I have managed to get all required packages working in a single environment on linux, i have uploaded this environment for download (pynot.yml), i am running python 3.6 on that environment which was what i ran while taking the course, keep in mind that updating python versions can be a challenge, for newest versions the step above can be followed, i recommend installing pynot first and then the rest of the packages as that method seems to work best in general. Look up how to install an environment from a .yml file if you need instructions on that.
+I have managed to get all required packages working in a single environment on linux, i have uploaded this environment for download (pynot.yml), i am running python 3.6 on that environment which was what i ran while taking the course, keep in mind that updating python versions can be a challenge, for newest versions the step above can be followed, i recommend installing pynot first and then the rest of the packages as that method seems to work best in general. Look up how to install an environment from a .yml file if you need instructions on that. 
+
+# Update #1:
+- Updated the python version to python 3.8 due to requirement of pynot being python v.3.7 or newer
+- Updated READ_ME file to match
